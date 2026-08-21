@@ -91,7 +91,7 @@ void spiBegin(uint8_t irq, uint8_t rst)
       pinMode(irq, INPUT);
   // start SPI
 #if defined(ARDUINO_ARCH_NRF52)
-  SPI.setPins(DW3000_PIN_MISO, DW3000_PIN_SCK, DW3000_PIN_MOSI);
+  // SPI.setPins(DW3000_PIN_MISO, DW3000_PIN_SCK, DW3000_PIN_MOSI);
 #endif
   SPI.begin();
 #ifndef ESP8266
